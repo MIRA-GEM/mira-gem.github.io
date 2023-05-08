@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MIRA-GEM Creations: A unique fusion of art and design, inspiring creativity and imagination.">
     <title>MIRA-GEM Creations</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -13,12 +15,22 @@
             margin: 0;
             padding: 0;
         }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
         h1 {
             font-family: 'Merriweather', serif;
             font-weight: 700;
             font-size: 2.5rem;
             text-align: center;
-            padding: 2rem 0;
+            padding: 1rem 0;
         }
         p {
             font-size: 1.2rem;
@@ -29,9 +41,20 @@
             color: #FF6F61;
             text-decoration: none;
         }
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
+    <header>
+        <img src="your_logo.png" alt="MIRA-GEM Creations Logo">
+    </header>
     <h1>MIRA-GEM Creations</h1>
     <p>A unique fusion of art and design, inspiring creativity and imagination. Discover our captivating collection and embark on an artistic journey with us. 💫</p>
     <p><a href="https://www.etsy.com/shop/MiraGemCreations" target="_blank">Visit Our Shop</a></p>

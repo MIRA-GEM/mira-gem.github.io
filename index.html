@@ -5,44 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MIRA-GEM Creations: A unique fusion of art and design, inspiring creativity and imagination.">
     <title>MIRA-GEM Creations</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://github.com/MIRA-GEM/mira-gem.github.io/blob/main/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            color: #10009C;
-            background-color: #FFFFFF;
+            color: #FFFFFF;
+            background: linear-gradient(135deg, #10009C 0%, #FF6F61 100%);
             margin: 0;
             padding: 0;
-        }
-        header {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            min-height: 100vh;
+        }
+        header {
             padding: 2rem;
         }
         header img {
             width: auto;
-            height: 192px;
+            height: 80px;
         }
         p {
             font-size: 1.2rem;
             text-align: center;
             padding: 1rem;
+            max-width: 80%;
         }
         a {
             display: inline-block;
             color: #FFFFFF;
-            background-color: #FF6F61;
+            background-color: #10009C;
             text-decoration: none;
             padding: 0.8rem 1.5rem;
             border-radius: 5px;
             font-weight: bold;
             font-size: 1.2rem;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         a:hover {
-            background-color: #FF4C43;
+            background-color: #0D008A;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        .instagram {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            padding: 0;
+            background: none;
+            box-shadow: none;
+        }
+        .instagram:hover {
+            background-color: transparent;
+            transform: none;
         }
         @media screen and (max-width: 600px) {
             p {
@@ -60,6 +78,8 @@
         <img src="mira-gem_logo.png" alt="MIRA-GEM Creations Logo">
     </header>
     <p>A unique fusion of art and design, inspiring creativity and imagination.<br/>Discover our captivating collection and embark on an artistic journey with us. 💫</p>
-    <p><a href="https://www.etsy.com/shop/MiraGemCreations" target="_blank">Visit Our Shop</a></p>
+<p><a href="https://www.etsy.com/shop/MiraGemCreations" target="_blank">Visit Our Shop</a></p>
+<p><a class="instagram" href="https://www.instagram.com/miragemcreations/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a></p>
+
 </body>
 </html>

@@ -8,70 +8,73 @@
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/MIRA-GEM/mira-gem.github.io/main/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: #FFFFFF;
-            background: linear-gradient(135deg, #10009C 0%, #FF6F61 100%);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        header {
-            padding: 2rem;
-        }
-        header img {
-            width: 192px;
-            height: auto;
-        }
+<style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: #FFFFFF;
+        background: linear-gradient(135deg, #10009C 0%, #FF6F61 100%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    header {
+        padding: 2rem;
+    }
+    header img {
+        width: 192px;
+        height: auto;
+    }
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1rem;
+        max-width: 80%;
+    }
+    a {
+        display: inline-block;
+        color: #FFFFFF;
+        background-color: #10009C;
+        text-decoration: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    a:hover {
+        background-color: #0D008A;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+    .instagram {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+    .instagram:hover {
+        background-color: transparent;
+        transform: none;
+    }
+
+    /* Media query for mobile devices */
+    @media screen and (max-width: 600px) {
         p {
-            font-size: 1.2rem;
-            text-align: center;
-            padding: 1rem;
-            max-width: 80%;
+            font-size: 1rem;
+            text-align: left; /* Change the text alignment for mobile */
         }
         a {
-            display: inline-block;
-            color: #FFFFFF;
-            background-color: #10009C;
-            text-decoration: none;
-            padding: 0.8rem 1.5rem;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            padding: 0.6rem 1rem;
         }
-        a:hover {
-            background-color: #0D008A;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        }
-        .instagram {
-            font-size: 1.5rem;
-            margin-top: 1rem;
-            padding: 0;
-            background: none;
-            box-shadow: none;
-        }
-        .instagram:hover {
-            background-color: transparent;
-            transform: none;
-        }
-        @media screen and (max-width: 600px) {
-            p {
-                font-size: 1rem;
-            }
-            a {
-                font-size: 1rem;
-                padding: 0.6rem 1rem;
-            }
-        }
-    </style>
+    }
+</style>
 <script>
     function adjustLogoWidth() {
         const ctaButton = document.querySelector('.cta');

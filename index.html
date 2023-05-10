@@ -8,76 +8,91 @@
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/MIRA-GEM/mira-gem.github.io/main/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: #FFFFFF;
-            background: linear-gradient(135deg, #10009C 0%, #FF6F61 100%);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        header {
-            padding: 2rem;
-        }
-        header img {
-            width: 192px;
-            height: auto;
-        }
+<style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: #FFFFFF;
+        background: linear-gradient(135deg, #10009C 0%, #FF6F61 100%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    header {
+        padding: 2rem;
+    }
+    header img {
+        width: 192px;
+        height: auto;
+    }
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1rem;
+        max-width: 80%;
+    }
+    a {
+        color: #FFFFFF;
+        text-decoration: underline;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        transition: none;
+    }
+    a.cta-button {
+        text-decoration: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        background-color: #10009C;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    a.cta-button:hover {
+        background-color: #0D008A;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+    .instagram {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+    .instagram:hover {
+        background-color: transparent;
+        transform: none;
+    }
+    img {
+        max-width: 676px;
+        width: 80%;
+        height: auto;
+    }
+    @media screen and (max-width: 600px) {
         p {
-            font-size: 1.2rem;
-            text-align: center;
-            padding: 1rem;
-            max-width: 80%;
+            font-size: 1rem;
+            text-align: left;
         }
         a {
-            display: inline-block;
-            color: #FFFFFF;
-            background-color: #10009C;
-            text-decoration: none;
-            padding: 0.8rem 1.5rem;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            padding: 0.6rem 1rem;
         }
-        a:hover {
-            background-color: #0D008A;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        }
-        .instagram {
-            font-size: 1.5rem;
-            margin-top: 1rem;
-            padding: 0;
-            background: none;
-            box-shadow: none;
-        }
-        .instagram:hover {
-            background-color: transparent;
-            transform: none;
-        }
-        img {
-            max-width: 676px;
-            width: 80%;
-            height: auto;
-        }
-        @media screen and (max-width: 600px) {
-            p {
-                font-size: 1rem;
-            	text-align: left;
-            }
-            a {
-                font-size: 1rem;
-                padding: 0.6rem 1rem;
-            }
-        }
-    </style>
+    }
+
+.h2r-logo-link {
+  text-decoration: none;
+        display: inline;
+        position: relative;
+        top: 5px;
+        vertical-align: none;
+}
+
+</style>
 <script>
     function adjustLogoWidth() {
         const ctaButton = document.querySelector('.cta');
@@ -96,7 +111,10 @@
 
 <p>A unique fusion of art and design, inspiring creativity and imagination.
 <br/>Discover our captivating collection with MIRA&#8209;GEM creations 🎨 🌟 🚀
-<br/><br/><a class="cta" href="https://www.etsy.com/shop/MiraGemCreations" target="_blank">Visit The Shop</a>&emsp;<a class="instagram" href="https://www.instagram.com/miragemcreations/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a></p>
+<br/><br/><a class="cta-button" href="https://www.etsy.com/shop/MiraGemCreations" target="_blank">Visit The Shop</a>&emsp;<a class="instagram" href="https://www.instagram.com/miragemcreations/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>&emsp;<a href="https://www.h2random.com" target="_blank" class="h2r-logo-link">
+  <img src="h2r28logo.png" alt="H2Random Logo" style="width: auto; height: auto;">
+</a>
+</p>
 
     
 <img id="randomImage" src="show/h2r01.png" alt="Sample artwork from MIRA-GEM Creations" title="Click to change">
@@ -124,7 +142,6 @@
     }, 20000); // Change image every 20 seconds
 
 </script>
-
 
 <p>© 2023 MIRA-GEM - All Rights Reserved</p>
 

@@ -98,7 +98,33 @@
 <br/>Discover our captivating collection with MIRA&#8209;GEM creations 🎨 🌟 🚀
 <br/><br/><a class="cta" href="https://www.etsy.com/shop/MiraGemCreations" target="_blank">Visit The Shop</a>&emsp;<a class="instagram" href="https://www.instagram.com/miragemcreations/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a></p>
 
-<img src="show/h2r01.png" alt="test 01">
+    
+<img id="randomImage" src="show/h2r01.png" alt="Sample artwork from MIRA-GEM Creations" title="Click to change">
+
+<script>
+    function loadRandomImage(images) {
+        const currentImage = document.getElementById('randomImage').src;
+        let randomIndex, randomImage;
+
+        do {
+            randomIndex = Math.floor(Math.random() * images.length);
+            randomImage = 'show/' + images[randomIndex];
+        } while (currentImage.includes(randomImage));
+
+        document.getElementById('randomImage').src = randomImage;
+    }
+
+    const images = ['h2r01.png', 'h2r02.png', 'h2r03.png', 'h2r04.png', 'h2r05.png', 'h2r06.png', 'h2r07.png', 'h2r08.png', 'h2r09.png'];
+
+    const randomImageElement = document.getElementById('randomImage');
+    randomImageElement.addEventListener('click', () => loadRandomImage(images));
+
+    setInterval(() => {
+        loadRandomImage(images);
+    }, 20000); // Change image every 20 seconds
+
+</script>
+
 
 <p>© 2023 MIRA-GEM - All Rights Reserved</p>
 
